@@ -23,13 +23,13 @@ class DataValidation:
                     logger.info(f"Column {col} is not in the schema")
                     validation_status = False
                     with open(self.config.STATUS_FILE, "w") as f:
-                        f.write("Data validation failed")
+                        f.write(f"validation status: {validation_status}\n")
                     break
                 else:
                     logger.info("All columns are present in the schema")
                     validation_status = True
                     with open(self.config.STATUS_FILE, "w") as f:
-                        f.write("Data validation passed")
+                        f.write(f"Validation status: {validation_status}")
             return validation_status
         except Exception as e:
             logger.exception(e)
