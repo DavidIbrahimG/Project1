@@ -7,7 +7,7 @@ An end to end data science project.
     2. Data Validation
     3. Data Transformation
     4. Model Training
-    5. Model Evaluation
+    5. Model Evaluation, Mlflow, Dagshub
 
 ### Workflows
 1. Update config.yaml
